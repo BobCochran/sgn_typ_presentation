@@ -7,8 +7,13 @@
   },
   "dependencies": {
     "mongodb" : "*",
-    "express": "3.4.8",
-    "jade": "*"
+    "express": "*",
+    "jade": "*",
+    "connect": "*",
+    "static-favicon": "*",
+    "body-parser": "*",
+    "errorhandler": "*",
+    "morgan": "*"
   },
     "devDependencies": {
         "should": "^3.1.3"
