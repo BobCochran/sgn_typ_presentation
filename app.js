@@ -35,7 +35,7 @@ require('./routes') (app)
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname + '/app_server/views'));
 app.set('view engine', 'jade');
-app.use(favicon());
+app.use(favicon('public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
