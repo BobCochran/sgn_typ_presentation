@@ -10,7 +10,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var errorhandler = require('errorhandler')
-var CongroupProvider = require('./models/congrp')
+var CongroupProvider = require('./app_server/models/congrp')
 
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format;
