@@ -1,3 +1,5 @@
+var CongroupProvider = require('./app_server/models/congrp')
+
 /* Get 'home' page */
 module.exports.homelist = function(req, res) {
     CongroupProvider(function(err, grps) {
