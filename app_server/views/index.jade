@@ -1,4 +1,8 @@
 extends layout
 
 block content
-  p Welcome to #{title}
+  #congrp
+      - each conceptgroup in congrp
+          div.congrp
+              div.grpnum= congrp.cgrp_num_int
+              div.grptxt= congrp.cgrp_text

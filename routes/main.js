@@ -1,5 +1,5 @@
 /*
- * GET home page.
+ * GET the About page.
  */
 var ctrl = require('../app_server/controllers/main')
 
