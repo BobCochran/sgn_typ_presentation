@@ -1,14 +1,14 @@
-var CongroupProvider = require('../models/congrp')
+var CongroupProvider2 = require('../models/CongroupProvider2').CongroupProvider2
 
 /* Get 'home' page */
 module.exports.homelist = function(req, res) {
-    CongroupProvider(function(err, grps) {
+    CongroupProvider2.getCongroups(function (err,results) {
+        if (err) return err
         res.render('index', {
             title: 'Signtyp Imaging Project Concept Groups',
-            congrp:grps
+            congrp:results
         })
     })
-
 }
 
 /* GET 'concept group' page */
